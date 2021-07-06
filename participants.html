@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Участники</title>
+    <meta name="description" content="">
+    <meta name="twitter:title" content="Мета Заголовок">
+    <meta name="twitter:description" content="Мета описание">
+    <meta name="twitter:image" content="img.jpg"><!-- Open Graph data-->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Мета Заголовок">
+    <meta property="og:description" content="Мета описание">
+    <meta property="og:image" content="img.jpg">
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="/img/sprite/symbol/sprite.svg" as="image" type="image/svg+xml">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__col-logo">
+                        <a class="header-logo" href="/">
+                            <img class="header-logo__img" src="/img/logo.png" alt="" role="presentation" />
+                        </a>
+                    </div>
+                    <div class="header__col-main">
+                        <div class="header__box-top">
+                            <div class="header__box-top-col-1">
+                                <div class="header__inf">
+                                    <div class="header__inf-phone">
+                                        <a class="header-phone" href="tel:84996438228">8 (499) 643-82-28 </a>
+                                    </div>
+                                    <div class="header__inf-address">
+                                        <span class="header-address">Москва, ул. Садовая-Спасская, 21/1</span>
+                                    </div>
+                                </div>
+                                <div class="header__search-form">
+                                    <div class="header-search-form">
+                                        <form action="/search" autocomplete="off">
+                                            <span class="header-search-form__input input-text"><input
+                                                    class="header-search-form__input-field input-text__field"
+                                                    type="search" name="q" placeholder="Поиск" /></span>
+                                            <button class="header-search-form__submit" type="submit"><i
+                                                    class="header-search-form__submit-icon">
+                                                    <svg class="svg-icon svg-icon-search">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
+                                                    </svg>
+                                                </i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__box-top-col-2">
+                                <div class="header__search-tirgger">
+                                    <a class="header-seacrh-tirgger js-header-search-trigger" href="/search/">
+                                        <span class="header-seacrh-tirgger__icon header-seacrh-tirgger__icon--search">
+                                            <svg class="svg-icon svg-icon-search">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="header-seacrh-tirgger__icon header-seacrh-tirgger__icon--close">
+                                            <svg class="svg-icon svg-icon-close">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__box-bottom">
+                            <div class="header__nav">
+                                <nav class="header-nav">
+                                    <ul class="header-nav__list">
+                                        <div class="menu__search">
+                                            <div class="header-search-form">
+                                                <form action="/search" autocomplete="off">
+                                                    <span class="header-search-form__input input-text"><input
+                                                            class="header-search-form__input-field input-text__field"
+                                                            type="search" name="q"
+                                                            placeholder="Поиск по сайту" /></span>
+                                                    <button class="header-search-form__submit" type="submit"><i
+                                                            class="header-search-form__submit-icon">
+                                                            <svg class="svg-icon svg-icon-search">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#search">
+                                                                </use>
+                                                            </svg>
+                                                        </i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link--arrow is-current" href="#"> О
+                                                Союзе<span class="header-nav__link-arrow">
+                                                    <svg class="svg-icon svg-icon-menu-arrow-down">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#menu-arrow-down">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <span class='header__mob-1'></span>
+                                            <div class="header-nav__lv1-dropdown  header__mob_1">
+                                                <ul class="header-nav__lv1-list">
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Цели и задачи</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Структура</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Руководство</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Документы</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Участники</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Порядок вступления </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link--arrow" href="#"> Комиссии<span
+                                                    class="header-nav__link-arrow">
+                                                    <svg class="svg-icon svg-icon-menu-arrow-down">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#menu-arrow-down">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <span class='header__mob-2'></span>
+                                            <div class="header-nav__lv1-dropdown header__mob_2">
+                                                <ul class="header-nav__lv1-list">
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Комиссия по
+                                                            техническому регулированию</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Комиссия по грузовому
+                                                            вагоностроению</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Комиссия по поглощающим
+                                                            аппаратам</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Научно-технический
+                                                            совет</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link--arrow" href="#"> ПК-7 «Грузовые
+                                                вагоны»<span class="header-nav__link-arrow">
+                                                    <svg class="svg-icon svg-icon-menu-arrow-down">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#menu-arrow-down">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <span class='header__mob-3'></span>
+                                            <div class="header-nav__lv1-dropdown header__mob_3">
+                                                <ul class="header-nav__lv1-list">
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Деятельность</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Руководство</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Члены Подкомитета</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Секретариат</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Личный кабинет</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link" href="#"> Аналитика</a>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link--arrow" href="#">
+                                                Пресс-центр<span class="header-nav__link-arrow">
+                                                    <svg class="svg-icon svg-icon-menu-arrow-down">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#menu-arrow-down">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <span class='header__mob-4'></span>
+                                            <div class="header-nav__lv1-dropdown header__mob_4">
+                                                <ul class="header-nav__lv1-list">
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Новости</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Мероприятия</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link" href="#"> Контакты</a>
+                                        </li>
+                                    </ul>
+                                    <div class="header__menu-btn">
+                                        <button>
+                                            Полная версия сайта
+                                        </button>
+                                    </div>
+                                    <div class="header__menu-bottom">
+                                        <p class="footer__copy">&copy; 2021. Союз производителей и пользователей
+                                            железнодорожного подвижного
+                                            состава «Объединение вагоностроителей»</p>
+                                    </div>
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="menu__burger">
+                        <span class='menu__burger-line'></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="top-banner">
+                    <div class="top-banner__bg">
+                        <img class="top-banner__bg-img" src="/img/temp/top-banner.jpg" alt="Участники" width="1170"
+                            height="270" title="" />
+                    </div>
+                </section>
+                <div class="breadcrumbs-block">
+                    <ul class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+                        <li class="breadcrumbs__item breadcrumbs__item--main" itemprop="itemListElement" itemscope=""
+                            itemtype="http://schema.org/ListItem">
+                            <a class="breadcrumbs__link" href="/" itemprop="item">
+                                <span itemprop="name" content="Главная">Главная</span>
+                            </a><i class="breadcrumbs__sep">/</i>
+                            <meta itemprop="position" content="0" />
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope=""
+                            itemtype="http://schema.org/ListItem">
+                            <a class="breadcrumbs__link" href="/" itemprop="item">
+                                <span itemprop="name" content="Главная">О союзе</span>
+                            </a><i class="breadcrumbs__sep">/</i>
+                            <meta itemprop="position" content="1" />
+                        </li>
+                        <li class="breadcrumbs__item" itemprop="itemListElement" itemscope=""
+                            itemtype="http://schema.org/ListItem">
+                            <span itemprop="name" content="Главная">Участники</span>
+                            <meta itemprop="position" content="2" />
+                        </li>
+                    </ul>
+                </div>
+                <div class="page-title">
+                    <h1>Участники</h1>
+                    <a class="page-title__link" href="#">Как вступить в Союз?</a>
+                </div>
+                <section class="s-union-participants">
+                    <div class="s-union-participants__sec-title">Производственные предпрития</div>
+                    <div class="s-union-participants__list s-union-participants__list--mb">
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-1.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «НПК «Уралвагонзавод»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-2.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «НПК «Уралвагонзавод»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-3.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «Тихвинский вагоностроительный
+                                        завод»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-4.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «Уралкриомаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-5.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «ТихвинХимМаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-6.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «НПК «ТихвинСпецМаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-7.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">СЗАО «Могилевский вагоностроительный
+                                        завод»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-4.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «Уралкриомаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-5.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «ТихвинХимМаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-6.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «НПК «ТихвинСпецМаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-7.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">СЗАО «Могилевский вагоностроительный
+                                        завод»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-union-participants__sec-title">Научно-исследовательский комплекс</div>
+                    <div class="s-union-participants__list">
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-1.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «НПК «Уралвагонзавод»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-4.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «Уралкриомаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-5.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «ТихвинХимМаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-6.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">АО «НПК «ТихвинСпецМаш»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-union-participants__item">
+                            <div class="union-participant">
+                                <div class="union-participant__col-img">
+                                    <span class="union-participant__picture">
+                                        <img class="union-participant__picture-img" src="/img/temp/members-item-7.png"
+                                            alt="" role="presentation" />
+                                    </span>
+                                </div>
+                                <div class="union-participant__col-descr">
+                                    <span class="union-participant__title">СЗАО «Могилевский вагоностроительный
+                                        завод»</span>
+                                    <div class="union-participant__text text">
+                                        <p>Предприятие транспортного машиностроения по выпуску вагонов-цистерн нового
+                                            поколения. Расположен на территории промышленной площадки в г. Тихвине В
+                                            этом блоке максимум 4 строки</p>
+                                    </div>
+                                </div>
+                                <div class="union-participant__col-inf">
+                                    <span class="union-participant__phone">
+                                        <a class="union-participant__phone-link" href="tel:+78136731580">+7 (81367) 31
+                                            580</a>
+                                    </span>
+                                    <span class="union-participant__address text">
+                                        <p>187555, Россия, Ленинградская область, город Тихвин, Промплощадка</p>
+                                    </span>
+                                    <span class="union-participant__email">
+                                        <a class="union-participant__email-link" href="mailto:tcmash.ru">tcmash.ru</a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="footer__main-col-menu">
+                        <div class="footer-menu">
+                            <div class="footer-menu__col">
+                                <div class="footer-menu__title">
+                                    <a class="footer-menu__title-link" href="#"> О Союзе</a>
+                                </div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Цели и задачи</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Структура</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Руководство</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Документы</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Участники</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Порядок вступления </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu__col">
+                                <div class="footer-menu__title">
+                                    <a class="footer-menu__title-link" href="#"> Комиссии</a>
+                                </div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Комиссия по техническому регулированию</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Комиссия по грузовому вагоностроению</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Комиссия по поглощающим аппаратам</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Научно-технический совет</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu__col">
+                                <div class="footer-menu__title">
+                                    <a class="footer-menu__title-link" href="#"> ПК-7 «Грузовые вагоны»</a>
+                                </div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Деятельность</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Руководство</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Члены Подкомитета</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Секретариат</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Личный кабинет</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu__col">
+                                <div class="footer-menu__title footer-menu__title--single-mb">
+                                    <a class="footer-menu__title-link" href="#"> Аналитика</a>
+                                </div>
+                                <div class="footer-menu__title">
+                                    <a class="footer-menu__title-link" href="#"> Пресс-центр</a>
+                                </div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Новости</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Мероприятия</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__main-col-inf">
+                        <div class="footer-inf">
+                            <div class="footer-inf__title">
+                                <a class="footer-inf__title-link" href="#"> Контакты</a>
+                            </div>
+                            <div class="footer-inf__phones">
+                                <div class="footer-inf__phones-item">
+                                    <a class="footer-inf__phones-link" href="tel:+74996438220">+7 (499) 643-82-20</a>
+                                </div>
+                                <div class="footer-inf__phones-item">
+                                    <a class="footer-inf__phones-link" href="tel:+74996438220">+7 (499) 643-82-20</a>
+                                </div>
+                            </div>
+                            <p class="footer-inf__address"> Россия, 107217, г. Москва,<br>ул. Садовая-Спасская,
+                                д.21/1,<br>3 этаж, офис 307</p>
+                            <div class="footer-inf__email">
+                                <a class="footer-inf__email-link" href="mailto:info@souzovs.com">info@souzovs.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__copy">&copy; 2021. Союз производителей и пользователей железнодорожного подвижного
+                        состава «Объединение вагоностроителей»</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Main page</title>
+    <meta name="description" content="">
+    <meta name="twitter:title" content="Мета Заголовок">
+    <meta name="twitter:description" content="Мета описание">
+    <meta name="twitter:image" content="img.jpg"><!-- Open Graph data-->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Мета Заголовок">
+    <meta property="og:description" content="Мета описание">
+    <meta property="og:image" content="img.jpg">
+    <meta name="theme-color" content="#fff">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preload" href="/img/sprite/symbol/sprite.svg" as="image" type="image/svg+xml">
+    <link rel="stylesheet" href="css/datepicker.min.css" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__row">
+                    <div class="header__col-logo">
+                        <a class="header-logo" href="/">
+                            <img class="header-logo__img" src="/img/logo.png" alt="" role="presentation" />
+                        </a>
+                    </div>
+                    <div class="header__col-main">
+                        <div class="header__box-top">
+                            <div class="header__box-top-col-1">
+                                <div class="header__inf">
+                                    <div class="header__inf-phone">
+                                        <a class="header-phone" href="tel:84996438228">8 (499) 643-82-28 </a>
+                                    </div>
+                                    <div class="header__inf-address">
+                                        <span class="header-address">Москва, ул. Садовая-Спасская, 21/1</span>
+                                    </div>
+                                </div>
+                                <div class="header__search-form">
+                                    <div class="header-search-form">
+                                        <form action="/search" autocomplete="off">
+                                            <span class="header-search-form__input input-text"><input
+                                                    class="header-search-form__input-field input-text__field"
+                                                    type="search" name="q" placeholder="Поиск" /></span>
+                                            <button class="header-search-form__submit" type="submit"><i
+                                                    class="header-search-form__submit-icon">
+                                                    <svg class="svg-icon svg-icon-search">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
+                                                    </svg>
+                                                </i></button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header__box-top-col-2">
+                                <div class="header__search-tirgger">
+                                    <a class="header-seacrh-tirgger js-header-search-trigger" href="/search/">
+                                        <span class="header-seacrh-tirgger__icon header-seacrh-tirgger__icon--search">
+                                            <svg class="svg-icon svg-icon-search">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="header-seacrh-tirgger__icon header-seacrh-tirgger__icon--close">
+                                            <svg class="svg-icon svg-icon-close">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header__box-bottom">
+                            <div class="header__nav">
+                                <nav class="header-nav">
+                                    <ul class="header-nav__list">
+                                        <div class="menu__search">
+                                            <div class="header-search-form">
+                                                <form action="/search" autocomplete="off">
+                                                    <span class="header-search-form__input input-text"><input
+                                                            class="header-search-form__input-field input-text__field"
+                                                            type="search" name="q"
+                                                            placeholder="Поиск по сайту" /></span>
+                                                    <button class="header-search-form__submit" type="submit"><i
+                                                            class="header-search-form__submit-icon">
+                                                            <svg class="svg-icon svg-icon-search">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#search">
+                                                                </use>
+                                                            </svg>
+                                                        </i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link--arrow is-current" href="#"> О
+                                                Союзе<span class="header-nav__link-arrow">
+                                                    <svg class="svg-icon svg-icon-menu-arrow-down">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#menu-arrow-down">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <span class='header__mob-1'></span>
+                                            <div class="header-nav__lv1-dropdown  header__mob_1">
+                                                <ul class="header-nav__lv1-list">
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Цели и задачи</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Структура</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Руководство</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Документы</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Участники</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Порядок вступления </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link--arrow" href="#"> Комиссии<span
+                                                    class="header-nav__link-arrow">
+                                                    <svg class="svg-icon svg-icon-menu-arrow-down">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#menu-arrow-down">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <span class='header__mob-2'></span>
+                                            <div class="header-nav__lv1-dropdown header__mob_2">
+                                                <ul class="header-nav__lv1-list">
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Комиссия по
+                                                            техническому регулированию</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Комиссия по грузовому
+                                                            вагоностроению</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Комиссия по поглощающим
+                                                            аппаратам</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Научно-технический
+                                                            совет</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link--arrow" href="#"> ПК-7 «Грузовые
+                                                вагоны»<span class="header-nav__link-arrow">
+                                                    <svg class="svg-icon svg-icon-menu-arrow-down">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#menu-arrow-down">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <span class='header__mob-3'></span>
+                                            <div class="header-nav__lv1-dropdown header__mob_3">
+                                                <ul class="header-nav__lv1-list">
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Деятельность</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Руководство</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Члены Подкомитета</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Секретариат</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Личный кабинет</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link" href="#"> Аналитика</a>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link header-nav__link--arrow" href="#">
+                                                Пресс-центр<span class="header-nav__link-arrow">
+                                                    <svg class="svg-icon svg-icon-menu-arrow-down">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#menu-arrow-down">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                            <span class='header__mob-4'></span>
+                                            <div class="header-nav__lv1-dropdown header__mob_4">
+                                                <ul class="header-nav__lv1-list">
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Новости</a>
+                                                    </li>
+                                                    <li class="header-nav__li lv1-item">
+                                                        <a class="header-nav__lv1-link" href="#">Мероприятия</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="header-nav__item">
+                                            <a class="header-nav__link" href="#"> Контакты</a>
+                                        </li>
+                                    </ul>
+                                    <div class="header__menu-btn">
+                                        <button>
+                                            Полная версия сайта
+                                        </button>
+                                    </div>
+                                    <div class="header__menu-bottom">
+                                        <p class="footer__copy">&copy; 2021. Союз производителей и пользователей
+                                            железнодорожного подвижного
+                                            состава «Объединение вагоностроителей»</p>
+                                    </div>
+                                </nav>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="menu__burger">
+                        <span class='menu__burger-line'></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <div class="container">
+                <section class="banner">
+                    <div class="banner__content">
+                        <h1 class="banner__title">Союз «Объединение вагоностроителей»</h1>
+                        <div class="banner__inf">
+                            <div class="banner__inf-col">
+                                <span class="banner__inf-main">35</span>
+                                <span class="banner__inf-label">Организаций</span>
+                            </div>
+                            <div class="banner__inf-col">
+                                <span class="banner__inf-main">13</span>
+                                <span class="banner__inf-label"> Регионов<br>России</span>
+                            </div>
+                            <div class="banner__inf-col">
+                                <span class="banner__inf-main">85%</span>
+                                <span class="banner__inf-label">Российского грузового<br>вагоностроения</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="banner__bg">
+                        <img class="banner__bg-img" src="/img/banner.jpg" alt="Союз «Объединение вагоностроителей»"
+                            title="" />
+                    </div>
+                </section>
+                <section class="s-news">
+                    <div class="s-news__top">
+                        <div class="s-news__top-left">
+                            <h2 class="s-news__title">Новости</h2>
+                        </div>
+                        <div class="s-news__top-right">
+                            <a class="s-news__all-link" href="news.html">Все новости</a>
+                        </div>
+                    </div>
+                    <div class="s-news__main">
+                        <div class="s-news__list">
+                            <div class="s-news__item">
+                                <a class="news-list-item" href="news-item.html">
+                                    <span class="news-list-item__title">Союз «Объединение вагоностроителей» отмечает
+                                        20-летний юбилей</span>
+                                    <span class="news-list-item__text text">27 марта Союз производителей и пользователей
+                                        железнодорожного подвижного состава «Объединение вагоностроителей» (Союз ОВС)
+                                        отмечает свой 20-летний юбилей. На протяжении значительного срока главная цель
+                                        деятельности – быть эффективным провайдером идей и стратегий предпри...</span>
+                                    <span class="news-list-item__bottom">
+                                        <span class="news-list-item__bottom-left"><time class="news-list-item__date">23
+                                                февраля 2021</time></span>
+                                        <span class="news-list-item__bottom-right">
+                                            <span class="news-list-item__more">Подробнее</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="s-news__item">
+                                <a class="news-list-item" href="news-item.html">
+                                    <span class="news-list-item__title">Для поддержки вагоностроителей нужно выработать
+                                        комплекс мер, содержащий и монетарные, и немонетарные меры</span>
+                                    <span class="news-list-item__text text">По итогам заседания участники сошлись во
+                                        мнении, что мероприятия такого рода, уже ставшие хорошей традицией, являются
+                                        одним из действенных способов ведения дискуссии и нахождения общих точек
+                                        соприкосновения для достижения...</span>
+                                    <span class="news-list-item__bottom">
+                                        <span class="news-list-item__bottom-left"><time class="news-list-item__date">23
+                                                февраля 2021</time></span>
+                                        <span class="news-list-item__bottom-right">
+                                            <span class="news-list-item__more">Подробнее</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="s-news__item">
+                                <a class="news-list-item" href="news-item.html">
+                                    <span class="news-list-item__title">В 2021 году спросом будут пользоваться
+                                        специализированные и инновационные вагоны</span>
+                                    <span class="news-list-item__text text">По итогам заседания участники сошлись во
+                                        мнении, что мероприятия такого рода, уже ставшие хорошей традицией, являются
+                                        одним из действенных способов ведения дискуссии и нахождения общих точек
+                                        соприкосновения для достижения общих результатов, выражающихся в по...</span>
+                                    <span class="news-list-item__bottom">
+                                        <span class="news-list-item__bottom-left"><time class="news-list-item__date">23
+                                                февраля 2021</time></span>
+                                        <span class="news-list-item__bottom-right">
+                                            <span class="news-list-item__more">Подробнее</span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s-events">
+                    <div class="s-events__top">
+                        <div class="s-events__top-left">
+                            <h2 class="s-events__title">Мероприятия</h2>
+                        </div>
+                        <div class="s-events__top-right">
+                            <a class="s-events__all-link" href="events.html">Все мероприятия</a>
+                        </div>
+                    </div>
+                    <div class="s-events__main">
+                        <div class="s-events__main-left">
+                            <div class="datepicker-here" id='calendare'></div>
+                        </div>
+                        <div class="s-events__main-right">
+                            <div class="s-events__tabs">
+                                <ul class="tabs">
+                                    <li class="tabs__tab is-active" data-tab-target="events-tab-1">13 сентября</li>
+                                    <li class="tabs__tab" data-tab-target="events-tab-2">24 сентября</li>
+                                    <li class="tabs__tab" data-tab-target="events-tab-3">28 сентября</li>
+                                </ul>
+                            </div>
+                            <div class="tabs-content">
+                                <div class="tabs-content__wrap is-active" data-tab="events-tab-1"
+                                    data-tab-group="events-tabs">
+                                    <div class="tabs-content__wrap-inner">
+                                        <a class="event-tab-item" href="event-item.html">
+                                            <span class="event-tab-item__title">XVIII Международная конференция «Рынок
+                                                транспортных услуг: взаимодействие и партнерство</span>
+                                            <span class="event-tab-item__text text">10 декабря 2020 года в 10:00 в
+                                                онлайн-формате будет проходить XVIII Международная конференция «Рынок
+                                                транспортных услуг: взаимодействие и партнерство». Организатор
+                                                конференции: журнал «РЖД-Партнер» при поддержке Союза «Объединение
+                                                вагоностроителей»</span>
+                                            <span class="event-tab-item__bottom">
+                                                <span class="event-tab-item__bottom-left"><time
+                                                        class="event-tab-item__date"> 24 сентября <span
+                                                            class="event-tab-item__date-sep">/ </span>10:00</time>
+                                                    <address class="event-tab-item__address">г. Санкт-Петербург, Crowne
+                                                        Plaza St.Petersburg Airport</address>
+                                                </span>
+                                                <span class="event-tab-item__bottom-right">
+                                                    <span class="event-tab-item__more">Подробнее</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tabs-content__wrap" data-tab="events-tab-2" data-tab-group="events-tabs">
+                                    <div class="tabs-content__wrap-inner">
+                                        <a class="event-tab-item" href="event-item.html">
+                                            <span class="event-tab-item__title">Союз «Объединение вагоностроителей»
+                                                отмечает 20-летний юбилей</span>
+                                            <span class="event-tab-item__text text">27 марта Союз производителей и
+                                                пользователей железнодорожного подвижного состава «Объединение
+                                                вагоностроителей» (Союз ОВС) отмечает свой 20-летний юбилей. На
+                                                протяжении значительного срока главная цель деятельности – быть
+                                                эффективным провайдером идей и стратегий предпри...</span>
+                                            <span class="event-tab-item__bottom">
+                                                <span class="event-tab-item__bottom-left"><time
+                                                        class="event-tab-item__date">23 февраля 2021</time>
+                                                    <address class="event-tab-item__address">г. Санкт-Петербург, Crowne
+                                                        Plaza St.Petersburg Airport</address>
+                                                </span>
+                                                <span class="event-tab-item__bottom-right">
+                                                    <span class="event-tab-item__more">Подробнее</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tabs-content__wrap" data-tab="events-tab-3" data-tab-group="events-tabs">
+                                    <div class="tabs-content__wrap-inner">
+                                        <a class="event-tab-item" href="event-item.html">
+                                            <span class="event-tab-item__title">Союз «Объединение вагоностроителей»
+                                                отмечает 20-летний юбилей</span>
+                                            <span class="event-tab-item__text text">27 марта Союз производителей и
+                                                пользователей железнодорожного подвижного состава «Объединение
+                                                вагоностроителей» (Союз ОВС) отмечает свой 20-летний юбилей. На
+                                                протяжении значительного срока главная цель деятельности – быть
+                                                эффективным провайдером идей и стратегий предпри...</span>
+                                            <span class="event-tab-item__bottom">
+                                                <span class="event-tab-item__bottom-left"><time
+                                                        class="event-tab-item__date">23 февраля 2021</time>
+                                                    <address class="event-tab-item__address">г. Санкт-Петербург, Crowne
+                                                        Plaza St.Petersburg Airport</address>
+                                                </span>
+                                                <span class="event-tab-item__bottom-right">
+                                                    <span class="event-tab-item__more">Подробнее</span>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="s-projects">
+                    <div class="s-projects__top">
+                        <h2 class="s-projects__title">Проекты Союза</h2>
+                    </div>
+                    <div class="s-projects__list">
+                        <div class="s-projects__item">
+                            <a class="projects-item" href="projects-item.html">
+                                <span class="projects-item__picture">
+                                    <img class="projects-item__picture-img" src="/img/temp/project-item-1.jpg"
+                                        width="370" height="275" alt="Цифровой грузовой вагон" title="" />
+                                </span>
+                                <span class="projects-item__title">Цифровой грузовой вагон</span>
+                            </a>
+                        </div>
+                        <div class="s-projects__item">
+                            <a class="projects-item" href="projects-item.html">
+                                <span class="projects-item__picture">
+                                    <img class="projects-item__picture-img" src="/img/temp/project-item-2.jpg"
+                                        width="370" height="275"
+                                        alt="Переход нового вагоностроения на кассетные подшипники" title="" />
+                                </span>
+                                <span class="projects-item__title">Переход нового вагоностроения на кассетные
+                                    подшипники</span>
+                            </a>
+                        </div>
+                        <div class="s-projects__item">
+                            <a class="projects-item" href="projects-item.html">
+                                <span class="projects-item__picture">
+                                    <img class="projects-item__picture-img" src="/img/temp/project-item-3.jpg"
+                                        width="370" height="275" alt="Поддержка грузового вагоностроения" title="" />
+                                </span>
+                                <span class="projects-item__title">Поддержка грузового вагоностроения</span>
+                            </a>
+                        </div>
+                        <div class="s-projects__item">
+                            <a class="projects-item" href="projects-item.html">
+                                <span class="projects-item__picture">
+                                    <img class="projects-item__picture-img" src="/img/temp/project-item-4.jpg"
+                                        width="370" height="275" alt="Инновационность" title="" />
+                                </span>
+                                <span class="projects-item__title">Инновационность</span>
+                            </a>
+                        </div>
+                        <div class="s-projects__item">
+                            <a class="projects-item" href="projects-item.html">
+                                <span class="projects-item__picture">
+                                    <img class="projects-item__picture-img" src="/img/temp/project-item-5.jpg"
+                                        width="370" height="275" alt="Регуляторная гильотина" title="" />
+                                </span>
+                                <span class="projects-item__title">Регуляторная гильотина</span>
+                            </a>
+                        </div>
+                        <div class="s-projects__item">
+                            <a class="projects-item" href="projects-item.html">
+                                <span class="projects-item__picture">
+                                    <img class="projects-item__picture-img" src="/img/temp/project-item-6.jpg"
+                                        width="370" height="275"
+                                        alt="Установление показателей назначенного срока службы" title="" />
+                                </span>
+                                <span class="projects-item__title">Установление показателей назначенного срока
+                                    службы</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <section class="s-members">
+                    <div class="s-members__top">
+                        <div class="s-members__top-left">
+                            <h2 class="s-members__title">Участники</h2>
+                            <div class="s-members__slider-controls">
+                                <div class="s-members__slider-controls-prev">
+                                    <button class="btn-arrow btn-arrow--prev js-slider-prev" type="button">
+                                        <svg class="svg-icon svg-icon-slider-prev">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#slider-prev"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="s-members__slider-controls-next">
+                                    <button class="btn-arrow btn-arrow--next js-slider-next" type="button">
+                                        <svg class="svg-icon svg-icon-slider-next">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#slider-next"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-members__top-right">
+                            <a class="s-members__all-link" href="members.html">Подробнее об участниках</a>
+                        </div>
+                    </div>
+                    <div class="s-members__main">
+                        <div class="s-members__slider js-slider">
+                            <div class="s-members__slider-item">
+                                <div class="s-members__slider-item-row">
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-1.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-2.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-3.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-4.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-5.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-6.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-7.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-8.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-members__slider-item">
+                                <div class="s-members__slider-item-row">
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-6.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-2.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-3.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-4.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-5.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-6.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-3.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-7.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-members__slider-item">
+                                <div class="s-members__slider-item-row">
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-7.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-8.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-2.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-3.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-4.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-5.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-4.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-5.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s-members__slider-item">
+                                <div class="s-members__slider-item-row">
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-6.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-7.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-8.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-1.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="s-members__item">
+                                        <div class="members-item">
+                                            <span class="members-item__picture">
+                                                <img class="members-item__picture-img"
+                                                    src="/img/temp/members-item-2.png" alt="" role="presentation" />
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__main">
+                    <div class="footer__main-col-menu">
+                        <div class="footer-menu">
+                            <div class="footer-menu__col">
+                                <div class="footer-menu__title">
+                                    <a class="footer-menu__title-link" href="#"> О Союзе</a>
+                                </div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Цели и задачи</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Структура</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Руководство</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Документы</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Участники</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Порядок вступления </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu__col">
+                                <div class="footer-menu__title">
+                                    <a class="footer-menu__title-link" href="#"> Комиссии</a>
+                                </div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Комиссия по техническому регулированию</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Комиссия по грузовому вагоностроению</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Комиссия по поглощающим аппаратам</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Научно-технический совет</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu__col">
+                                <div class="footer-menu__title">
+                                    <a class="footer-menu__title-link" href="#"> ПК-7 «Грузовые вагоны»</a>
+                                </div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Деятельность</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Руководство</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Члены Подкомитета</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Секретариат</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Личный кабинет</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="footer-menu__col">
+                                <div class="footer-menu__title footer-menu__title--single-mb">
+                                    <a class="footer-menu__title-link" href="#"> Аналитика</a>
+                                </div>
+                                <div class="footer-menu__title">
+                                    <a class="footer-menu__title-link" href="#"> Пресс-центр</a>
+                                </div>
+                                <ul class="footer-menu__list">
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Новости</a>
+                                    </li>
+                                    <li class="footer-menu__li item">
+                                        <a class="footer-menu__link" href="#">Мероприятия</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer__main-col-inf">
+                        <div class="footer-inf">
+                            <div class="footer-inf__title">
+                                <a class="footer-inf__title-link" href="#"> Контакты</a>
+                            </div>
+                            <div class="footer-inf__phones">
+                                <div class="footer-inf__phones-item">
+                                    <a class="footer-inf__phones-link" href="tel:+74996438220">+7 (499) 643-82-20</a>
+                                </div>
+                                <div class="footer-inf__phones-item">
+                                    <a class="footer-inf__phones-link" href="tel:+74996438220">+7 (499) 643-82-20</a>
+                                </div>
+                            </div>
+                            <p class="footer-inf__address"> Россия, 107217, г. Москва,<br>ул. Садовая-Спасская,
+                                д.21/1,<br>3 этаж, офис 307</p>
+                            <div class="footer-inf__email">
+                                <a class="footer-inf__email-link" href="mailto:info@souzovs.com">info@souzovs.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <p class="footer__copy">&copy; 2021. Союз производителей и пользователей железнодорожного подвижного
+                        состава «Объединение вагоностроителей»</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/scripts.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script>
+        $('#calendare').datepicker({
+            inline: true,
+            multipleDates: true,
+        })
+    </script>
+
+</body>
+
+</html>
