@@ -24,7 +24,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="preload" href="/img/sprite/symbol/sprite.svg" as="image" type="image/svg+xml">
+    <link rel="preload" href="img/sprite/symbol/sprite.svg" as="image" type="image/svg+xml">
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                 <div class="header__row">
                     <div class="header__col-logo">
                         <a class="header-logo" href="/">
-                            <img class="header-logo__img" src="/img/logo.png" alt="" role="presentation" />
+                            <img class="header-logo__img" src="img/logo.png" alt="" role="presentation" />
                         </a>
                     </div>
                     <div class="header__col-main">
@@ -249,7 +249,7 @@
             <div class="container">
                 <section class="top-banner">
                     <div class="top-banner__bg">
-                        <img class="top-banner__bg-img" src="/img/temp/top-banner.jpg" alt="Руководство" width="1170"
+                        <img class="top-banner__bg-img" src="img/temp/top-banner.jpg" alt="Руководство" width="1170"
                             height="270" title="" />
                     </div>
                 </section>
@@ -277,37 +277,43 @@
                     </ul>
                 </div>
                 <h1 class="page-title">Руководство</h1>
-                <section class="s-union-managments">
+                <section class="s-union-managments s-union-managments-fix">
                     <div class="s-union-managments__list">
                         <div class="s-union-managments__list-col">
                             <div class="person">
                                 <span class="person__picture">
-                                    <img class="person__picture-img" src="/img/temp/person-item-1.png" alt=""
+                                    <img class="person__picture-img" src="img/temp/person-item-1.png" alt=""
                                         role="presentation" />
                                 </span>
-                                <span class="person__name"> Артяков<br>Владимир Владимирович</span>
-                                <span class="person__descr text"> Председатель<br>Наблюдательного совета</span>
+                                <div>
+                                    <span class="person__name"> Артяков<br>Владимир Владимирович</span>
+                                    <span class="person__descr text"> Председатель<br>Наблюдательного совета</span>
+                                </div>
                             </div>
                         </div>
                         <div class="s-union-managments__list-col">
                             <div class="person">
                                 <span class="person__picture">
-                                    <img class="person__picture-img" src="/img/temp/person-item-2.png" alt=""
+                                    <img class="person__picture-img" src="img/temp/person-item-2.png" alt=""
                                         role="presentation" />
                                 </span>
-                                <span class="person__name"> Андреев<br>Александр Петрович</span>
-                                <span class="person__descr text"> </span>Председатель<br>Наблюдательного совета
+                                <div>
+                                    <span class="person__name"> Андреев<br>Александр Петрович</span>
+                                    <span class="person__descr text"> </span>Председатель<br>Наблюдательного совета
+                                </div>
                             </div>
                         </div>
                         <div class="s-union-managments__list-col">
                             <div class="person">
                                 <span class="person__picture">
-                                    <img class="person__picture-img" src="/img/temp/person-item-2.png" alt=""
+                                    <img class="person__picture-img" src="img/temp/person-item-2.png" alt=""
                                         role="presentation" />
                                 </span>
-                                <span class="person__name"> Андреев<br>Александр Петрович</span>
-                                <span class="person__descr text"> Член Наблюдательного совета,<br>Исполнительный
-                                    директор Союза</span>
+                                <div>
+                                    <span class="person__name"> Андреев<br>Александр Петрович</span>
+                                    <span class="person__descr text"> Член Наблюдательного совета,<br>Исполнительный
+                                        директор Союза</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -432,6 +438,7 @@
         </footer>
     </div>
     <script src="js/scripts.js"></script>
+    <script src='js/main.js'></script>
 </body>
 
 </html>

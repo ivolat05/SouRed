@@ -7611,39 +7611,25 @@ $(document).ready(function () {
 
             wrap.addClass('is-slider-initialized');
             slider.slick({
-                // centerMode: true,
-                // variableWidth: true,
+                //centerMode: true,
+
                 infinite: true,
                 adaptiveHeight: false,
                 arrows: true,
                 prevArrow: prevBtn,
                 nextArrow: nextBtn,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                // responsive: [
-                //     {
-                //         breakpoint: window.globalOptions.sizes.lg,
-                //         settings: {
-                //             slidesToShow: 2,
-                //             slidesToScroll: 2,
-                //         }
-                //     },
-                //     {
-                //         breakpoint: window.globalOptions.sizes.md,
-                //         settings: {
-                //             slidesToShow: 2,
-                //             slidesToScroll: 2,
-                //         }
-                //     },
-                //     {
-                //         breakpoint: window.globalOptions.sizes.sm,
-                //         settings: {
-                //             slidesToShow: 1,
-                //             slidesToScroll: 1,
-                //         }
-                //     }
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                responsive: [{
+                        breakpoint: 1200,
+                        settings: {
+                            variableWidth: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                        }
+                    }
 
-                // ]
+                ]
             });
         });
     }
@@ -7839,7 +7825,8 @@ window.globalOptions = {
 $('.menu__burger').click((event) => {
     $('.menu__burger').toggleClass('burger__active'),
         $('.header__col-logo').toggleClass('header__col-logo__active'),
-        $('.header__box-bottom').toggleClass('header__box-bottom__active')
+        $('.header__box-bottom').toggleClass('header__box-bottom__active'),
+        $('body').toggleClass('look')
 });
 
 $('.header__mob-1').click((event) => {
